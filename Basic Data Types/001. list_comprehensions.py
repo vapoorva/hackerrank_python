@@ -1,0 +1,12 @@
+# Problem: https://www.hackerrank.com/challenges/list-comprehensions/problem
+# Description : lets learn about list comprehensions! You are given three integres x,y,z....
+
+if __name__ == '__main__':
+    x = int(input())
+    y = int(input())
+    z = int(input())
+    n = int(input())
+
+    l = [[a, b, c] for a in range(0, x + 1) for b in range(0, y + 1) for c in range(0, z + 1) if a + b + c != n]
+
+    print(l)
